@@ -1,0 +1,33 @@
+{
+    "name": "publish",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint src/**/*",
+        "eslint:fix": "eslint src/**/* --fix",
+        "sync-atc": "tsx src/publish.ts",
+        "sync-xtc": "tsx src/xtcReporter.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "async-file": "^2.0.2",
+        "axios": "^1.7.0",
+        "decompress": "^4.2.1",
+        "jszip": "^3.10.1",
+        "matrix-requirements-sdk": "2.5.0-rc.3",
+        "node-self": "^1.0.2",
+        "rimraf": "^6"
+    },
+    "devDependencies": {
+        "@types/decompress": "^4.2.7",
+        "@typescript-eslint/eslint-plugin": "^8",
+        "eslint": "^8",
+        "eslint-config-prettier": "^9",
+        "eslint-plugin-prettier": "^5.0.0",
+        "prettier": "^3.0.3",
+        "tsx": "^4",
+        "typescript": "^5"
+    }
+}
